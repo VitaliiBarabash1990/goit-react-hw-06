@@ -1,9 +1,14 @@
-import ContactBooks from "./components/ContactBooks/ContactBooks";
 import "./App.css";
+import ContactForm from "./components/ContactForm/ContactForm";
+import ContactList from "./components/ContactList/ContactList";
+import SearchBox from "./components/SearchBox/SearchBox";
 const App = () => {
 	return (
 		<>
-			<ContactBooks />
+			<h1>Phonebook</h1>
+			<ContactForm />
+			<SearchBox />
+			<ContactList />
 		</>
 	);
 };
