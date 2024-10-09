@@ -2,7 +2,10 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import s from "./Contact.module.css";
 import { deleteContact } from "../../redux/contactsSlice";
-const Contact = ({ dispatch, ...contact }) => {
+import { useDispatch } from "react-redux";
+const Contact = ({ ...contact }) => {
+	const dispatch = useDispatch();
+
 	return (
 		<>
 			<li className={s.listItem} key={contact.id}>
